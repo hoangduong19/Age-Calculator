@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="title">
+                Age Calculator
+            </h1>
+
+            <p>Enter your birth date: </p>
+            <div class="input-date">
+                <div class="date">
+                    <p class="birth-day" id="birth-day">
+                    00
+                    </p>
+                    <span class="slash">
+                        /
+                    </span>
+                    <p class="birth-month" id="birth-month">
+                        00
+                    </p>
+                    <span class="slash">
+                        /
+                    </span>
+                    <p class="birth-year" id="birth-year">
+                        9999
+                    </p>
+                </div>
+                <button class="calendar-btn" id="open-calendar-button">
+                    <img src="icon/calendar.png" alt="this is the button to choose date"/>
+                </button>
+            </div>
+            <button class="calculate-button" id="calculate-button">
+                Calculate
+            </button>
+            <div class="result">
+                <p class="subtitle">
+                    You are
+                </p>
+                <p class="current-age-year" id ="current-age-year">
+                    99
+                </p>
+                <p class="year">
+                    years
+                </p>
+                <p class="current-age-month" id="current-age-month">
+                    00
+                </p>
+                <p class="month">
+                    months
+                </p>
+            </div>
+        </div>
+        <div class="calendar-overlay" id="calendar-overlay">
+            <div class="datepicker">
+                <div class="choose-date">
+                    <button class="prev-month-button" id="prev-month-button">
+                        <img src="icon/left-arrow.png" alt="this is a left arrow to move month date.">
+                    </button>
+                    <button id="current-month">
+                        November
+                    </button>
+                    <button id="current-year">
+                        2025
+                    </button>
+                    <button class="next-month-button" id="next-month-button">
+                        <img src="icon/right-arrow.png" alt="this is a right arrow to move month date.">
+                    </button>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar dates will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
